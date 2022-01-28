@@ -14,8 +14,8 @@ import java.util.stream.IntStream;
  */
 public class ReentrantReadWriteLockExample {
 
-    // Use the read-write lock to make this map thread-safe
-    private List<Integer> threadSafeList = new ArrayList<>();
+    // Use the read-write lock to make this list thread-safe
+    private final List<Integer> threadSafeList = new ArrayList<>();
 
     private final ReadWriteLock lock = new ReentrantReadWriteLock();
 
